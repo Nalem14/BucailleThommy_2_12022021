@@ -1,11 +1,33 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-variablefont_wght-webfont.woff') format('woff'),
+         url('../fonts/Raleway-VariableFont_wght.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html,body {
     background-color: #FFF;
-
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
 }
 
 .container {
     width: auto;
     margin: 40px 50px;
+}
+
+input[type='submit'], button {
+    cursor: pointer;
+}
+
+
+/**
+* HEADER
+**/
+header section h1 {
+    font-size: 1.6em;
+    color: #202020;
 }
 
 .logo {
@@ -20,6 +42,7 @@ html,body {
     height: auto;
 }
 
+/** Navigation **/
 nav {
     width: 100%;
     text-align: right;
@@ -34,5 +57,102 @@ nav ul li a {
     text-decoration: none;
 }
 nav ul li a:hover {
-    color: #9f9f9f;
+    color: #303030;
+}
+
+/* Form */
+form .search {
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    display: inline-block;
+    padding: 1px;
+}
+form .search label i {
+    margin: 0 10px;
+    line-height: 30px;
+}
+form .search > input, button {
+    display: inline-block;
+    margin: 0;
+    border: none;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 0 15px;
+}
+form .search input {
+
+}
+form .search button {
+    background-color: #0065fc;
+    color: #FFF;
+    border-radius: 0 10px 10px 0;
+    padding: 2px 15px ;
+}
+
+/* Filters */
+section.filters {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+section.filters h2 {
+    display: inline;
+    margin-right: 20px;
+}
+section.filters a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #202020;
+    padding: 15px 0;
+    padding-right: 20px;
+    margin-right: 20px;
+    border: 2px solid #d9d9d9;
+    border-radius: 20px;
+}
+section.filters a:hover {
+    background-color: #deebff;
+}
+section.filters a:active {
+    background-color: #0065fc;
+    color: #FFF;
+}
+section.filters a .icon {
+    background-color: #deebff;
+    border-radius: 50px;
+    display: inline-block;
+    height: 100%;
+    width: 45px;
+    text-align: center;
+    padding: 5px;
+    margin-left: -10px;
+    margin-right: 5px;
+}
+section.filters a .icon i {
+    font-size: 1.2em;
+    color: #0065fc;
+    line-height: 45px;
+}
+
+/**
+* HELPER
+**/
+.small {
+    color: #505050;
+}
+
+.info {
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #0065fc;
+    border: 1px solid #d9d9d9;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.important {
+    font-weight: bold;
 }
