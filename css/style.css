@@ -32,9 +32,8 @@ header section h1 {
 
 .logo {
     display: inline;
-    margin-top: 10px;
     position: absolute;
-    top: 10px;
+    top: 30px;
     left: 40px;
 }
 .logo img {
@@ -72,7 +71,7 @@ form .search label i {
     line-height: 30px;
 }
 form .search > input, button {
-    display: inline-block;
+    display: inline;
     margin: 0;
     border: none;
     line-height: 40px;
@@ -89,48 +88,66 @@ form .search button {
     border-radius: 0 10px 10px 0;
     padding: 2px 15px ;
 }
+@media screen AND (max-width:576px) {
+    form .search {
+        display: block;
+    }
+    form .search > input, button {
+        width: 100%;
+    }
+    form .search button {
+        border-radius: 10px;
+    }
+}
 
 /* Filters */
-section.filters {
+section .filters {
     margin-top: 25px;
     margin-bottom: 25px;
+    display: flex;
 }
-section.filters h2 {
+section .filters h2 {
     display: inline;
     margin-right: 20px;
 }
-section.filters a {
+section .filters a {
+    display: inline-block;
     text-decoration: none;
     font-weight: bold;
     color: #202020;
-    padding: 15px 0;
+    margin-top: 10px;
     padding-right: 20px;
     margin-right: 20px;
     border: 2px solid #d9d9d9;
     border-radius: 20px;
 }
-section.filters a:hover {
+section .filters a:hover {
     background-color: #deebff;
 }
-section.filters a:active {
+section .filters a:active {
     background-color: #0065fc;
     color: #FFF;
 }
-section.filters a .icon {
+section .filters a .icon {
     background-color: #deebff;
     border-radius: 50px;
     display: inline-block;
-    height: 100%;
+    height: 45px;
     width: 45px;
     text-align: center;
     padding: 5px;
     margin-left: -10px;
     margin-right: 5px;
 }
-section.filters a .icon i {
+section .filters a .icon i {
     font-size: 1.2em;
     color: #0065fc;
     line-height: 45px;
+}
+@media screen AND (max-width:576px) {
+    section .filters a {
+        display: block;
+    }
 }
 
 /**
