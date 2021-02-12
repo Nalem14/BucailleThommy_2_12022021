@@ -150,6 +150,50 @@ section .filters a .icon i {
     }
 }
 
+
+/**
+* BODY
+**/
+.flex-container {
+    display: flex;
+}
+.flex-container .flex-8 {
+    flex-basis: 66.66%;
+}
+.flex-container .flex-4 {
+    flex-basis: 33.33%;
+}
+section .content {
+    margin: 20px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+}
+@media screen AND (max-width:992px) {
+    .flex-container {
+        display: block;
+    }
+}
+
+/**
+* ITEMs
+**/
+.item {
+    padding: 5px;
+    margin: 20px;
+    height: 300px;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px 1px #e4e4e4;
+    border-radius: 20px;
+}
+.item .item-img img {
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+}
+.item > .item-title, .item-price, .item-stars {
+    margin: 0 10px 0 10px;
+}
+
 /**
 * HELPER
 **/
@@ -172,4 +216,11 @@ section .filters a .icon i {
 
 .important {
     font-weight: bold;
+}
+
+.text-blue {
+    color: #0065fc;
+}
+.text-grey {
+    color: #d9d9d9;
 }
