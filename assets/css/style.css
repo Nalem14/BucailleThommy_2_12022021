@@ -1,4 +1,5 @@
 @media screen AND (max-width:576px) {
+    /* LOGO */
     header nav figure {
         position: absolute;
         top: 0;
@@ -8,6 +9,8 @@
         width: 6em;
         height: auto;
     }
+
+    /* NAV */
     header nav a {
         text-decoration: none;
         font-weight: bold;
@@ -41,5 +44,55 @@
         position: initial;
         height: 100%;
         width: 100%;
+    }
+
+    /* FORM */
+    #searchForm form {
+        display: flex;
+        width: 100%;
+        height: 48px;
+        text-align: center;
+        border: 2px solid #f2f2f2;
+        border-radius: 15px;
+        background-color: #f2f2f2;
+        display: inline-block;
+    }
+    #searchForm form input {
+        line-height: 52px;
+        text-indent: 10px;
+        font-size: 1.5em;
+        width: 310px;
+    }
+    #searchForm form > label, input, button {
+       height: 95%;
+       border: none;
+    }
+    #searchForm form label {
+        margin: 0;
+        padding: 0 15px;
+        text-align: center;
+        position: relative;
+        top: -5px;
+        left: 3px;
+    }
+    #searchForm form button span {
+        display: none;
+    }
+    #searchForm form button {
+        font-size: 1em;
+        background-color: #0065fc;
+        color: #FFF;
+        border-radius: 15px;
+        position: relative;
+        height: 48px;
+        right: 10px;
+        top: -1px;
+        width: 50px;
+        line-height: 55px;
+    }
+    #searchForm form button i {
+        position: relative;
+        top: -3px;
+        left: 2px;
     }
 }
