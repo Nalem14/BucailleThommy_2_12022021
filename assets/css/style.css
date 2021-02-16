@@ -47,6 +47,9 @@
     }
 
     /* FORM */
+    #searchForm {
+        padding: 20px;
+    }
     #searchForm form {
         display: flex;
         width: 100%;
@@ -61,7 +64,7 @@
         line-height: 52px;
         text-indent: 10px;
         font-size: 1.5em;
-        width: 310px;
+        width: 270px;
     }
     #searchForm form label, #searchForm form input, #searchForm form button {
        height: 95%;
@@ -97,6 +100,9 @@
     }
 
     /* Filters */
+    #filters {
+        padding: 20px;
+    }
     #filters ul li {
         display: inline-block;
         list-style: none;
@@ -129,6 +135,7 @@
 
     /* Header text info */
     header p:last-child i {
+        margin-left: 15px;
         padding: 5px;
         border: 1px solid #d9d9d9;
         border-radius: 20px;
