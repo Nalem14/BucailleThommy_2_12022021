@@ -1,192 +1,226 @@
-@media screen AND (max-width:576px) {
-    /* LOGO */
-    header nav figure {
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    header nav figure img {
-        width: 6em;
-        height: auto;
-    }
 
-    /* NAV */
-    header nav a {
-        text-decoration: none;
-        font-weight: bold;
-        color: #106ffc;
-        display: block;
-        position: absolute;
-        top: 30px;
-        right: 10px;
-    }
-    header nav ul {
-        margin-top: 90px;
-        display: flex;
-        padding: 0;
-    }
-    header nav ul li {
-        display: inline-block;
-        text-align: center;
-        list-style: none;
-        flex: 0 0 50%;
-    }
-    header nav ul li a {
-        color: #000000;
-        font-weight: normal;
-        border-bottom: 3px solid #f2f2f2;
-    }
-    header nav ul li a:hover, header nav ul li a:active {
-        color: #106ffc;
-        border-bottom: 3px solid #0065fc;
-    }
-    header nav ul li a {
-        position: initial;
-        height: 100%;
-        width: 100%;
-    }
+/* LOGO */
+header nav figure {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header nav figure img {
+    width: 6em;
+    height: auto;
+}
 
-    /* FORM */
-    #searchForm {
-        padding: 20px;
-    }
-    #searchForm form {
-        display: flex;
-        width: 100%;
-        height: 48px;
-        text-align: center;
-        border: 2px solid #f2f2f2;
-        border-radius: 15px;
-        background-color: #f2f2f2;
-        display: inline-block;
-    }
-    #searchForm form input {
-        line-height: 52px;
-        text-indent: 10px;
-        font-size: 1.5em;
-        width: 270px;
-    }
-    #searchForm form label, #searchForm form input, #searchForm form button {
-       height: 95%;
-       border: none;
-    }
-    #searchForm form label {
-        margin: 0;
-        padding: 0 15px;
-        text-align: center;
-        position: relative;
-        top: -5px;
-        left: 3px;
-    }
-    #searchForm form button span {
-        display: none;
-    }
-    #searchForm form button {
-        font-size: 1em;
-        background-color: #0065fc;
-        color: #FFF;
-        border-radius: 15px;
-        position: relative;
-        height: 48px;
-        right: 10px;
-        top: -1px;
-        width: 50px;
-        line-height: 55px;
-    }
-    #searchForm form button i {
-        position: relative;
-        top: -3px;
-        left: 2px;
-    }
+/* NAV */
+header nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #106ffc;
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
+header nav ul {
+    margin-top: 90px;
+    display: flex;
+    padding: 0;
+}
+header nav ul li {
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+    flex: 0 0 50%;
+}
+header nav ul li a {
+    color: #000000;
+    font-weight: normal;
+    border-bottom: 3px solid #f2f2f2;
+}
+header nav ul li a:hover, header nav ul li a:active {
+    color: #106ffc;
+    border-bottom: 3px solid #0065fc;
+}
+header nav ul li a {
+    position: initial;
+    height: 100%;
+    width: 100%;
+}
 
-    /* Filters */
-    #filters {
-        padding: 20px;
-    }
-    #filters ul li {
-        display: inline-block;
-        list-style: none;
-        margin: 5px;
-    }
-    #filters ul li a {
-        text-decoration: none;
-        padding: 10px 15px 10px 0;
-        border: 1px solid #d9d9d9;
-        border-radius: 20px;
-        font-weight: bold;
-        color: #000000;
-    }
-    #filters ul li a:hover {
-        background-color: #deebff;
-    }
-    #filters ul li a:active {
-        background-color: #0065fc;
-        color: #FFF;
-    }
-    #filters ul li a i {
-        color: #0065fc;
-        background-color: #deebff;
-        border-radius: 20px;
-        padding: 12px;
-        position: relative;
-        left: -12px; top: 1px;
-        width: 20px;
-    }
+/* FORM */
+#searchForm {
+    padding: 20px;
+}
+#searchForm form {
+    display: flex;
+    width: 100%;
+    height: 48px;
+    text-align: center;
+    border: 2px solid #f2f2f2;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    display: inline-block;
+}
+#searchForm form input {
+    line-height: 52px;
+    text-indent: 10px;
+    font-size: 1.5em;
+    width: 270px;
+}
+#searchForm form label, #searchForm form input, #searchForm form button {
+    height: 95%;
+    border: none;
+}
+#searchForm form label {
+    margin: 0;
+    padding: 0 15px;
+    text-align: center;
+    position: relative;
+    top: -5px;
+    left: 3px;
+}
+#searchForm form button span {
+    display: none;
+}
+#searchForm form button {
+    font-size: 1em;
+    background-color: #0065fc;
+    color: #FFF;
+    border-radius: 15px;
+    position: relative;
+    height: 48px;
+    right: 10px;
+    top: -1px;
+    width: 50px;
+    line-height: 55px;
+}
+#searchForm form button i {
+    position: relative;
+    top: -3px;
+    left: 2px;
+}
 
-    /* Header text info */
-    header p:last-child i {
-        margin-left: 15px;
-        padding: 5px;
-        border: 1px solid #d9d9d9;
-        border-radius: 20px;
-        color: #106ffc;
-        font-size: 8px;
-        width: 8px;
-        text-align: center;
-        margin-right: 5px;
-    }
+/* Filters */
+#filters {
+    padding: 20px;
+}
+#filters ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px;
+}
+#filters ul li a {
+    text-decoration: none;
+    padding: 10px 15px 10px 0;
+    border: 1px solid #d9d9d9;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+#filters ul li a:hover {
+    background-color: #deebff;
+}
+#filters ul li a:active {
+    background-color: #0065fc;
+    color: #FFF;
+}
+#filters ul li a i {
+    color: #0065fc;
+    background-color: #deebff;
+    border-radius: 20px;
+    padding: 12px;
+    position: relative;
+    left: -12px; top: 1px;
+    width: 20px;
+}
 
-    /* Popular */
-    #popular {
-        padding: 20px 10px;
-        background-color: #f2f2f2;
-    }
-    #popular h2 i {
-        float: right;
-    }
-    #popular article {
-        background-color: #fff;
-        margin-bottom: 15px;
-        border-radius: 20px;
-        box-shadow: 3px 3px 12px #c2c2c2;
-    }
-    #popular article h3 {
-        height: 30px;
-    }
-    #popular article a {
-        display: flex;
-        color: #000;
-        text-decoration: none;
-        height: 150px;
-    }
-    #popular article ul {
-        margin: 0; padding: 0;
-        position: relative;
-        bottom: -15px;
-    }
-    #popular article ul li {
-        list-style: none;
-        display: inline;
-        color: #0065fc;
-    }
-    #popular article figure img {
-        height: 140px;
-        width: 140px;
-        border-radius: 20px 0 0 20px;
-    }
-    #popular article figure {
-        flex-basis: 30%;
-        margin: 5px 15px 0 5px;
-        padding: 0;
-    }
+/* Header text info */
+header p:last-child i {
+    margin-left: 15px;
+    padding: 5px;
+    border: 1px solid #d9d9d9;
+    border-radius: 20px;
+    color: #106ffc;
+    font-size: 8px;
+    width: 8px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+/* Popular */
+#popular {
+    padding: 20px 10px;
+    background-color: #f2f2f2;
+}
+#popular h2 i {
+    float: right;
+}
+#popular article {
+    background-color: #fff;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 12px #c2c2c2;
+}
+#popular article h3 {
+    height: 30px;
+}
+#popular article a {
+    display: flex;
+    color: #000;
+    text-decoration: none;
+}
+#popular article ul {
+    margin: 0; padding: 0;
+    position: relative;
+    bottom: -15px;
+}
+#popular article ul li {
+    list-style: none;
+    display: inline;
+    color: #0065fc;
+}
+#popular article figure img {
+    height: 140px;
+    width: 140px;
+    border-radius: 20px 0 0 20px;
+}
+#popular article figure {
+    flex-basis: 30%;
+    margin: 5px 15px 0 5px;
+    padding: 0;
+}
+
+/* Comomdity */
+#hebergements article {
+    background-color: #fff;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 12px #c2c2c2;
+}
+#hebergements article div {
+    padding: 0 20px;
+}
+#hebergements article a {
+    color: #000;
+    text-decoration: none;
+}
+#hebergements article ul {
+    margin: 0; padding: 0;
+    position: relative;
+    bottom: 10px;
+}
+#hebergements article ul li {
+    list-style: none;
+    display: inline;
+    color: #0065fc;
+}
+#hebergements figure {
+    margin: 0;
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+}
+#hebergements figure img {
+    width: 100%;
+    padding: 5px;
+    border-radius: 20px 20px 0 0;
 }
