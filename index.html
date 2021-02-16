@@ -11,34 +11,39 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <!-- HEADER -->
-    <header>
-      <nav>
-        <div>
-          <img src="./assets/images/Reservia.svg" alt="Logo Reservia" />
-        </div>
-        <ul>
-          <li><a href="#">Hébergements</a></li>
-          <li><a href="#">Activités</a></li>
-          <li>
-            <strong><a href="#">S'inscrire</a></strong>
-          </li>
-        </ul>
-      </nav>
+    <section>
+      <!-- HEADER -->
+      <header>
+        <nav>
+          <figure>
+            <img src="assets/images/Reservia.svg" alt="Logo Reservia" />
+          </figure>
+          <a href="#">S'inscrire</a>
+          <ul>
+            <li><a href="#">Hébergements</a></li>
+            <li><a href="#">Activités</a></li>
+          </ul>
+        </nav>
 
-      <section>
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
-        <form action="" method="POST">
-          <div>
-            <label for="localization"
-              ><i class="fas fa-map-marker-alt"></i
-            ></label>
-            <input type="text" name="localization" value="Marseille, France" />
-            <button type="submit">Rechercher</button>
-          </div>
-        </form>
-      </section>
+        <section id="searchForm">
+          <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+          <p>En plein centre ville ou en pleine nature</p>
+          <form action="#" method="POST">
+                <label for="localization">
+                    <i class="fas fa-map-marker-alt"></i>
+                </label>
+                <input
+                    type="search"
+                    name="localization"
+                    id="localization"
+                    value="Marseille, France"
+                />
+                <button type="submit">
+                    <i class="fas fa-search"></i>
+                    <span>Rechercher</span>
+                </button>
+          </form>
+        </section>
 
         <section id="filters">
           <h2>Filtres</h2>
