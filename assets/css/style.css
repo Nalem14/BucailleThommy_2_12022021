@@ -380,3 +380,29 @@ footer ul li {
         flex-grow: 1;
     }
 }
+
+@media screen AND (min-width:768px) {
+    header nav figure img {
+        width: 8em;
+    }
+    header nav a {
+        font-size: 24px;
+    }
+    header nav ul li a {
+        font-size: 24px;
+        line-height: 48px;
+    }
+    h1 {
+        font-size: 2em!important;
+    }
+    h2 {
+        font-size: 1.5em!important;
+    }
+    h3 {
+        font-size: 1.25em!important;
+        margin-bottom: 15px!important;
+    } 
+    p {
+        font-size: 1.1em!important;
+    }
+}
