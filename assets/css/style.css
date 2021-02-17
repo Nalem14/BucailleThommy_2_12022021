@@ -241,9 +241,12 @@ header p:last-child i {
 }
 
 /* Acomodity */
+#hebergements {
+    padding: 20px;
+}
 #hebergements article {
     background-color: #fff;
-    margin: 20px;
+    margin-bottom: 20px;
     border-radius: 20px;
     box-shadow: 3px 3px 12px #c2c2c2;
     padding: 5px;
@@ -289,12 +292,14 @@ header p:last-child i {
 }
 
 /* Activities */
+#activites {
+    padding: 20px;
+}
 #activites article {
     background-color: #fff;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     border-radius: 20px;
     box-shadow: 3px 3px 12px #c2c2c2;
-    margin: 20px;
 }
 #activites h2 {
     font-weight: bold;
