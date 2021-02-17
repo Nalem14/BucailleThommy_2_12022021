@@ -15,8 +15,8 @@ html,body {
 /* LOGO */
 header nav figure {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 15px;
+    left: 15px;
 }
 header nav figure img {
     width: 6em;
