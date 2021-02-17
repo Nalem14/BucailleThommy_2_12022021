@@ -415,3 +415,90 @@ footer ul li {
         height: 300px;
     }
 }
+
+@media screen AND (min-width:1200px) {
+    header nav ul {
+        display: block;
+        margin: 25px 130px;
+        text-align: right;
+    }
+    header nav ul li {
+        margin: 0 20px;
+        text-align: center;
+    }
+    header nav ul li a {
+        border-bottom: none;
+        line-height: 32px;
+    }
+    header nav ul li a:hover, header nav ul li a:active {
+        border-bottom: none;
+    }
+
+    #searchForm form {
+        width: 500px;
+    }
+    #searchForm form button span {
+        display: initial;
+        padding: 5px 15px;
+    }
+    #searchForm form button i {
+        display: none;
+    }
+
+    main div {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    main div section:first {
+        flex: 0 0 33.32%;
+    }
+    main div section:last-child {
+        flex: 0 0 66.64%;
+    }
+
+    #popular {
+        border-radius: 20px;
+        margin: 20px;
+    }
+    #popular article {
+        flex: 0 0 90%;
+    }
+    #popular article div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hebergements {
+        background-color: #f2f2f2;
+        border-radius: 20px;
+        margin: 20px;
+    }
+    #hebergements article {
+        flex: 1 0 30%;
+    }
+    #hebergements article div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #activites {
+        display: flex;
+        flex-direction: row;
+    }
+    #activites div {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 24.99%;
+    }
+    #activites div article {
+        height: auto;
+        flex: 1 0 auto;
+    }
+    #activites figure img {
+        object-fit: cover;
+        height: auto;
+    }
+    #activites figure figcaption {
+        height: 30px;
+    }
+}
