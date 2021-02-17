@@ -406,3 +406,12 @@ footer ul li {
         font-size: 1.1em!important;
     }
 }
+
+@media screen AND (min-width:992px) {
+    #activites div {
+        flex: 1 0 100%;
+    }
+    #activites figure img {
+        height: 300px;
+    }
+}
