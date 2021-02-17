@@ -72,31 +72,39 @@ header nav ul li a {
 #searchForm form {
     margin-top: 20px;
     display: flex;
+    grid-column: 3;
+    align-items: center;
+    flex-direction: row;
     width: 100%;
     height: 48px;
     text-align: center;
     border: 2px solid #f2f2f2;
+    border-right: none;
     border-radius: 15px;
-    background-color: #f2f2f2;
-    display: inline-block;
+    background-color: #fff;
 }
 #searchForm form input {
-    line-height: 52px;
     text-indent: 10px;
     font-size: 1.5em;
-    width: 270px;
+    min-width: 0;
+    padding: 0;
+    flex-grow: 1;
+    flex: 8;
 }
 #searchForm form label, #searchForm form input, #searchForm form button {
-    height: 95%;
+    height:100%;
     border: none;
 }
 #searchForm form label {
-    margin: 0;
-    padding: 0 15px;
     text-align: center;
+    flex: 1.5;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+#searchForm form label i {
     position: relative;
-    top: -5px;
-    left: 3px;
+    top: 15px;
+    left: 2px;
 }
 #searchForm form button span {
     display: none;
@@ -106,16 +114,12 @@ header nav ul li a {
     background-color: #0065fc;
     color: #FFF;
     border-radius: 15px;
-    position: relative;
-    height: 48px;
-    right: 10px;
-    top: -1px;
-    width: 50px;
-    line-height: 55px;
+    flex: 1.5;
+    height: 110%;
 }
 #searchForm form button i {
     position: relative;
-    top: -3px;
+    top: 0;
     left: 2px;
 }
 
