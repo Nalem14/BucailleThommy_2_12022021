@@ -241,6 +241,9 @@ header p:last-child i {
 }
 
 /* Acomodity */
+#hebergements {
+    padding: 20px;
+}
 #hebergements article {
     background-color: #fff;
     margin: 20px;
@@ -341,4 +344,39 @@ footer h3 {
 footer ul li {
     list-style: none;
     line-height: 28px;
+}
+
+@media screen AND (min-width:576px) {
+    #popular, #hebergements, #activites  {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #popular h2, #hebergements h2, #activites h2 {
+        flex: 1 0 100%;
+    }
+    #popular article, #hebergements article {
+        flex: 1 0 45%;
+        margin: 5px 10px;
+    }
+    #activites div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #activites div article {
+        flex: 1 0 45%;
+        align-items: center;
+        margin: 5px;
+    }
+
+
+    footer {
+        margin-top: 20px;
+        display: flex;
+    }
+    footer div {
+        padding: 20px;
+        flex-grow: 1;
+    }
 }
