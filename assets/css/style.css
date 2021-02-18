@@ -8,8 +8,8 @@ html,body {
 /* LOGO */
 header nav figure {
     position: absolute;
-    top: 15px;
-    left: 15px;
+    top: 20px;
+    left: 20px;
 }
 header nav figure img {
     width: 6em;
@@ -23,8 +23,8 @@ header nav a {
     color: #106ffc;
     display: block;
     position: absolute;
-    top: 30px;
-    right: 10px;
+    top: 40px;
+    right: 20px;
 }
 header nav ul {
     margin-top: 90px;
