@@ -1,11 +1,4 @@
-@font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('../fonts/raleway-variablefont_wght-webfont.woff') format('woff'),
-         url('../fonts/Raleway-VariableFont_wght.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 html,body {
     background-color: #FFF;
