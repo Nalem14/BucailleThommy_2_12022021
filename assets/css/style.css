@@ -484,21 +484,18 @@ footer ul li {
     #activites {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
     }
     #activites div {
         display: flex;
         flex-direction: column;
-        flex: 0 0 24.99%;
-    }
-    #activites div article {
-        height: auto;
-        flex: 1 0 auto;
+        flex-wrap: nowrap;
+        flex: 1 1 24.99%;
     }
     #activites figure img {
-        object-fit: cover;
-        height: auto;
+        height: 570px;
     }
-    #activites figure figcaption {
-        height: 30px;
+    #activites div:nth-child(2n+1) article figure img {
+        height: 250px;
     }
 }
