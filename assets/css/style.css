@@ -467,6 +467,13 @@ footer ul li {
         display: flex;
         flex-direction: column;
     }
+    #popular article h3 {
+        height: auto;
+        font-size: 1.1em!important;
+    }
+    #popular article p {
+        font-size: 1em!important;
+    }
 
     #hebergements {
         background-color: #f2f2f2;
