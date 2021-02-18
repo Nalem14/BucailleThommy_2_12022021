@@ -498,4 +498,7 @@ footer ul li {
     #activites div:nth-child(2n+1) article figure img {
         height: 250px;
     }
+    #activites figure figcaption {
+        height: 30px;
+    }
 }
