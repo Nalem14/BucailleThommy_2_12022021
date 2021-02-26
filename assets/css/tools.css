@@ -1,3 +1,211 @@
-.active {
+/* 
+* General's 
+*/
+.container {
+    padding: 20px;
+}
+@media screen AND (min-width:992px) {
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+.container-full {
+    padding: 20px;
+    width: 100%;
+}
+
+.box-shadow {
+    box-shadow: 1px 1px 8px #c2c2c2;
+}
+
+
+/* 
+* Color's 
+*/
+.blue {
+    background-color: #0065fc;
+}
+.white {
+    background-color: #fff;
+}
+.black {
+    background-color: #000;
+}
+.grey {
+    background-color: #d9d9d9;
+}
+
+.text-blue {
     color: #0065fc;
+}
+.text-white {
+    color: #fff;
+}
+.text-black {
+    color: #000;
+}
+.text-grey {
+    color: #d9d9d9;
+}
+
+
+/* 
+* Text's alignement 
+*/
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+
+
+/* 
+* Image's 
+*/
+.image-full {
+    overflow: hidden;
+}
+.image-full img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* 
+* Padding's 
+*/
+.p-1 {
+    padding: 10px;
+}
+.pt-1 {
+    padding-top: 10px;
+}
+.pb-1 {
+    padding-bottom: 10px;
+}
+.pl-1 {
+    padding-left: 10px;
+}
+.pr-1 {
+    padding-right: 10px;
+}
+
+.p-2 {
+    padding: 20px;
+}
+.pt-2 {
+    padding-top: 20px;
+}
+.pb-2 {
+    padding-bottom: 20px;
+}
+.pl-2 {
+    padding-left: 20px;
+}
+.pr-2 {
+    padding-right: 20px;
+}
+
+/* Margin's */
+.m-1 {
+    margin: 10px;
+}
+.mt-1 {
+    margin-top: 10px;
+}
+.mb-1 {
+    margin-bottom: 10px;
+}
+.ml-1 {
+    margin-left: 10px;
+}
+.mr-1 {
+    margin-right: 10px;
+}
+
+.m-2 {
+    margin: 20px;
+}
+.mt-2 {
+    margin-top: 20px;
+}
+.mb-2 {
+    margin-bottom: 20px;
+}
+.ml-2 {
+    margin-left: 20px;
+}
+.mr-2 {
+    margin-right: 20px;
+}
+
+/* 
+* FLEX Helper's
+*/
+.d-flex {
+    display: flex;
+}
+
+
+.d-flex .f-wrap {
+    flex-wrap: wrap;
+}
+.d-flex .f-column {
+    flex-direction: column;
+}
+.d-flex .f-grow {
+    flex-grow: 1;
+}
+
+
+.d-flex .f-center {
+    justify-content: center;
+    align-items: center;
+}
+.d-flex .f-between {
+    justify-content: space-between;
+}
+
+
+.d-flex .flex-1 {
+    flex-basis: 8.33%;
+}
+.d-flex .flex-2 {
+    flex-basis: 16.66%;
+}
+.d-flex .flex-3 {
+    flex-basis: 24.99%;
+}
+.d-flex .flex-4 {
+    flex-basis: 33.32%;
+}
+.d-flex .flex-5 {
+    flex-basis: 41.65%;
+}
+.d-flex .flex-6 {
+    flex-basis: 50%;
+}
+.d-flex .flex-7 {
+    flex-basis: 58.31%;
+}
+.d-flex .flex-8 {
+    flex-basis: 66.64%;
+}
+.d-flex .flex-9 {
+    flex-basis: 74.97%;
+}
+.d-flex .flex-10 {
+    flex-basis: 83.3%;
+}
+.d-flex .flex-11 {
+    flex-basis: 91.63%;
+}
+.d-flex .flex-12 {
+    flex-basis: 100%;
 }

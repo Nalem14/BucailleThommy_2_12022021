@@ -376,3 +376,9 @@ footer ul li {
     list-style: none;
     line-height: 28px;
 }
+
+
+/* Divers */
+.active {
+    color: #0065fc;
+}
