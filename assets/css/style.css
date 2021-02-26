@@ -11,45 +11,44 @@ section, footer {
 
 /* HEADER */
 header {
+    margin-top: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+header figure {
+    margin-left: 20px;
 }
 header img {
     width: 6em;
 }
-header div {
-    flex-basis: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 20px;
-}
-header div a {
-    line-height: 3em;
-}
 header a {
+    margin-right: 20px;
+    line-height: 3em;
     text-decoration: none;
     font-weight: bold;
     color: #106ffc;
 }
 
 /* NAV */
+header nav {
+    margin-top: 20px;
+    flex-basis: 100%;
+}
 header nav ul {
     display: flex;
     flex-basis: 100%;
     flex-wrap: wrap;
-}
-header nav ul {
-    display: flex;
 }
 header nav ul li {
     flex-basis: 50%;
     text-align: center;
     list-style: none;
     border-bottom: 3px solid #f2f2f2;
-    line-height: 32px;
 }
 header nav ul li a {
+    line-height: 3em;
     font-weight: normal;
     color: #000;
 }
@@ -76,7 +75,7 @@ header nav ul li:hover a {
     display: flex;
     align-items: center;
     flex-direction: row;
-    height: 48px;
+    height: 50px;
     text-align: center;
     border: 2px solid #f2f2f2;
     border-right: none;
@@ -86,7 +85,6 @@ header nav ul li:hover a {
 #searchForm form input {
     text-indent: 10px;
     font-size: 1.2em;
-    min-width: 0;
     flex-grow: 1;
     flex-basis: 80%;
 }
@@ -95,11 +93,12 @@ header nav ul li:hover a {
 }
 #searchForm form input::placeholder {
     color: #000;
+    opacity: 1;
     font-weight: bold;
 }
 #searchForm form label, #searchForm form input, #searchForm form button {
     height:100%;
-    width: 50px;
+    min-width: 50px;
     border: none;
 }
 #searchForm form label {
@@ -107,10 +106,13 @@ header nav ul li:hover a {
     text-align: center;
     align-items: center;
     background-color: #f2f2f2;
-    border-radius: 15px 0 0 15px;
+    border-radius: 10px 0 0 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+#searchForm form i {
+    min-width: 50px;
 }
 #searchForm form button span {
     display: none;
@@ -121,11 +123,12 @@ header nav ul li:hover a {
     background-color: #0065fc;
     color: #FFF;
     border-radius: 15px;
-    height: 110%;
+    height: 50px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
 }
 
 /* Filters */
@@ -228,7 +231,8 @@ header p:last-child i {
 }
 #popular article ul {
     display: flex;
-    flex-basis: 40%;
+    margin-top: auto;
+    margin-bottom: 15px;
 }
 #popular article ul li {
     list-style: none;
@@ -269,7 +273,6 @@ header p:last-child i {
 #hebergements article h3 {
     font-weight: bold;
     font-size: 1.1em;
-    margin: 10px 0;
     flex-basis: 33.33%;
 }
 #hebergements article p {
@@ -279,6 +282,7 @@ header p:last-child i {
     margin: 0 15px;
     display: flex;
     flex-direction: column;
+    line-height: 24px;
 }
 #hebergements a {
     text-decoration: none;
@@ -295,9 +299,8 @@ header p:last-child i {
 }
 #hebergements article ul {
     display: flex;
-    flex-basis: 33.33%;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-top: auto;
 }
 #hebergements article ul li {
     list-style: none;
