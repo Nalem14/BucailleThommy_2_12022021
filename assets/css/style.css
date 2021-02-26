@@ -23,7 +23,7 @@ header figure {
 header img {
     width: 6em;
 }
-header a {
+header > a {
     margin-right: 20px;
     line-height: 3em;
     text-decoration: none;
@@ -51,6 +51,7 @@ header nav ul li a {
     line-height: 3em;
     font-weight: normal;
     color: #000;
+    text-decoration: none;
 }
 header nav ul li:hover, header nav ul li:active {
     border-bottom: 3px solid #0065fc;
@@ -191,6 +192,7 @@ header p:last-child i {
     border-radius: 50%;
     color: #106ffc;
     font-size: 12px;
+    min-width: 24px;
     width: 24px;
     height: 24px;
     display: flex;
