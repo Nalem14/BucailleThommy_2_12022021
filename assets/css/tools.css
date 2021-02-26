@@ -22,36 +22,6 @@
 
 
 /* 
-* Color's 
-*/
-.blue {
-    background-color: #0065fc;
-}
-.white {
-    background-color: #fff;
-}
-.black {
-    background-color: #000;
-}
-.grey {
-    background-color: #d9d9d9;
-}
-
-.text-blue {
-    color: #0065fc;
-}
-.text-white {
-    color: #fff;
-}
-.text-black {
-    color: #000;
-}
-.text-grey {
-    color: #d9d9d9;
-}
-
-
-/* 
 * Text's alignement 
 */
 .text-center {
