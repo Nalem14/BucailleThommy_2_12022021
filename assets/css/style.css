@@ -181,6 +181,7 @@ header nav ul li:hover a {
 header p:last-child {
     margin: 20px 0;
     display: flex;
+    line-height: 28px;
 }
 header p:last-child i {
     border: 1px solid #d9d9d9;
