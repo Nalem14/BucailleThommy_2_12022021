@@ -403,14 +403,22 @@ footer ul li {
         flex: 1 0 45%;
         margin: 5px 10px;
     }
+    #hebergements > a {
+        margin-top: 20px;
+    }
     #activites div {
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
     }
     #activites div article {
         flex: 1 0 45%;
         align-items: center;
         margin: 5px;
+    }
+    #activites div article:nth-child(odd) {
+        flex: 1 0 60%;
+    }
+    #activites div article:nth-child(even) {
+        flex: 1 0 30%;
     }
 }
