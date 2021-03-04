@@ -479,12 +479,18 @@ footer ul li {
         flex: 1 0 24.99%;
     }
     #activites div article {
-        height: 500px;
+        height: 350px;
     }
     #activites div:nth-child(2n+1) article {
-        height: 180px;
+        height: 125px;
     }
     #activites figure div {
-        height: 75%;
+        height: 60%;
+    }
+    #activites div article:nth-child(odd) {
+        flex: 1 0 50%;
+    }
+    #activites div article:nth-child(even) {
+        flex: 1 0 45%;
     }
 }
