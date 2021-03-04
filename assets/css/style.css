@@ -467,7 +467,24 @@ footer ul li {
         height: 240px;
     }
 
-    #activites article {
-        height: 300px;
+    #activites {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #activites div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        flex: 1 0 24.99%;
+    }
+    #activites div article {
+        height: 500px;
+    }
+    #activites div:nth-child(2n+1) article {
+        height: 180px;
+    }
+    #activites figure div {
+        height: 75%;
     }
 }
