@@ -434,16 +434,16 @@ footer ul li {
         font-size: 20px;
         line-height: 48px;
     }
-    h1 {
-        font-size: 2em;
+    #searchForm h1 {
+        font-size: 1.8em;
     }
-    h2 {
+    #filters h2, #popular h2, #hebergements h2, #activites h2 {
         font-size: 1.5em;
     }
-    h3 {
+    #popular article h3, #hebergements article h3 {
         font-size: 1.25em;
     } 
-    p {
+    #popular p, #filters p, #hebergements p, #activites p {
         font-size: 1.1em;
     }
 
