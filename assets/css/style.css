@@ -422,3 +422,34 @@ footer ul li {
         flex: 1 0 30%;
     }
 }
+
+@media screen AND (min-width:768px) {
+    header nav figure img {
+        width: 8em;
+    }
+    header nav > a {
+        font-size: 20px;
+    }
+    header nav ul li a {
+        font-size: 20px;
+        line-height: 48px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1.25em;
+    } 
+    p {
+        font-size: 1.1em;
+    }
+
+    footer > div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
