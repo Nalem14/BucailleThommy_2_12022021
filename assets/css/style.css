@@ -314,7 +314,7 @@ header p:last-child i {
 }
 #hebergements figure {
     margin: 5px;
-    height: 70%;
+    height: 60%;
 }
 #hebergements figure img {
     width: 100%;
@@ -428,10 +428,10 @@ footer ul li {
         width: 8em;
     }
     header > a {
-        font-size: 24px;
+        font-size: 20px;
     }
     header nav ul li a {
-        font-size: 24px;
+        font-size: 20px;
         line-height: 48px;
     }
     #searchForm h1 {
@@ -443,7 +443,7 @@ footer ul li {
     #popular article h3, #hebergements article h3 {
         font-size: 1.25em;
     } 
-    #popular p, #filters p, #hebergements p, #activites p {
+    #popular p, #filters p, #hebergements p, #activites p, header p {
         font-size: 1.1em;
     }
 
@@ -455,8 +455,16 @@ footer ul li {
 }
 
 @media screen AND (min-width:992px) {
+    #searchForm form {
+        max-width: 50%;
+    }
+    #popular article {
+        flex: 1 0 30%;
+    }
+
     #hebergements article {
-        height: 300px;
+        flex: 1 0 30%;
+        height: 240px;
     }
 
     #activites article {
