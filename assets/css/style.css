@@ -517,13 +517,13 @@ footer ul li {
     }
     header nav ul li {
         border-bottom: none;
-        flex-basis: 10%;
+        flex-basis: 15%;
     }
     header nav ul li:hover, header nav ul li:active {
         border-bottom: none;
     }
     header nav ul li a {
-        line-height: 22px;
+        line-height: 20px;
     }
 
     #searchForm form {
