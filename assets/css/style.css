@@ -389,3 +389,36 @@ footer ul li {
 .active {
     color: #0065fc;
 }
+
+@media screen AND (min-width:576px) {
+    #popular, #hebergements  {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #popular h2, #hebergements h2, #activites h2 {
+        flex: 1 0 100%;
+    }
+    #popular article, #hebergements article {
+        flex: 1 0 45%;
+        margin: 5px 10px;
+    }
+    #hebergements > a {
+        margin-top: 20px;
+    }
+    #activites div {
+        display: flex;
+        justify-content: space-between;
+    }
+    #activites div article {
+        flex: 1 0 45%;
+        align-items: center;
+        margin: 5px;
+    }
+    #activites div article:nth-child(odd) {
+        flex: 1 0 60%;
+    }
+    #activites div article:nth-child(even) {
+        flex: 1 0 30%;
+    }
+}
