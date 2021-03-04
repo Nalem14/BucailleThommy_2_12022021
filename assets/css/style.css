@@ -455,6 +455,10 @@ footer ul li {
 }
 
 @media screen AND (min-width:992px) {
+    #hebergements article {
+        height: 300px;
+    }
+
     #activites article {
         height: 300px;
     }
