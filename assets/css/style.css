@@ -424,26 +424,26 @@ footer ul li {
 }
 
 @media screen AND (min-width:768px) {
-    header nav figure img {
+    header figure img {
         width: 8em;
     }
-    header nav > a {
+    header > a {
         font-size: 20px;
     }
     header nav ul li a {
         font-size: 20px;
         line-height: 48px;
     }
-    h1 {
-        font-size: 2em;
+    #searchForm h1 {
+        font-size: 1.8em;
     }
-    h2 {
+    #filters h2, #popular h2, #hebergements h2, #activites h2 {
         font-size: 1.5em;
     }
-    h3 {
+    #popular article h3, #hebergements article h3 {
         font-size: 1.25em;
     } 
-    p {
+    #popular p, #filters p, #hebergements p, #activites p, header p {
         font-size: 1.1em;
     }
 
@@ -451,5 +451,46 @@ footer ul li {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+}
+
+@media screen AND (min-width:992px) {
+    #searchForm form {
+        max-width: 50%;
+    }
+    #popular article {
+        flex: 1 0 30%;
+    }
+
+    #hebergements article {
+        flex: 1 0 30%;
+        height: 240px;
+    }
+
+    #activites {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #activites div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        flex: 1 0 24.99%;
+    }
+    #activites div article {
+        height: 350px;
+    }
+    #activites div:nth-child(2n+1) article {
+        height: 125px;
+    }
+    #activites figure div {
+        height: 60%;
+    }
+    #activites div article:nth-child(odd) {
+        flex: 1 0 50%;
+    }
+    #activites div article:nth-child(even) {
+        flex: 1 0 45%;
     }
 }
