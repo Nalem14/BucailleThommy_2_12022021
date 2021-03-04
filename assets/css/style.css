@@ -394,7 +394,7 @@ footer ul li {
     #popular, #hebergements  {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
     }
     #popular h2, #hebergements h2, #activites h2 {
         flex: 1 0 100%;
