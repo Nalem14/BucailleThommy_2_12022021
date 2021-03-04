@@ -424,14 +424,14 @@ footer ul li {
 }
 
 @media screen AND (min-width:768px) {
-    header nav figure img {
+    header figure img {
         width: 8em;
     }
-    header nav > a {
-        font-size: 20px;
+    header > a {
+        font-size: 24px;
     }
     header nav ul li a {
-        font-size: 20px;
+        font-size: 24px;
         line-height: 48px;
     }
     #searchForm h1 {
