@@ -446,4 +446,10 @@ footer ul li {
     p {
         font-size: 1.1em;
     }
+
+    footer > div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
