@@ -228,6 +228,7 @@ header p:last-child i {
     border-radius: 20px;
     box-shadow: 1px 1px 8px #c2c2c2;
     height: 130px;
+    margin-bottom: 10px;
 }
 #popular article h3 {
     margin-top: 15px;
@@ -279,7 +280,7 @@ header p:last-child i {
     margin-bottom: 20px;
     border-radius: 20px;
     box-shadow: 1px 1px 8px #c2c2c2;
-    height: 180px;
+    height: 200px;
 }
 #hebergements > a {
     text-decoration: none;
