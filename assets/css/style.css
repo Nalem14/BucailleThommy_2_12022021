@@ -588,9 +588,14 @@ footer ul li {
     }
 
     #activites div article {
-        height: 450px;
+        margin: 20px;
+        height: 500px;
     }
     #activites div:nth-child(2n+1) article {
-        height: 200px;
+        max-height: 230px;
+    }
+
+    footer {
+        margin-top: 50px;
     }
 }
