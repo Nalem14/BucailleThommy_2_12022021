@@ -5,6 +5,11 @@ html,body {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
 }
 
+header, main, footer div {
+    max-width: 1280px;
+    margin: 20px auto!important;
+}
+
 section, footer {
     padding: 40px 20px;
 }
@@ -25,7 +30,7 @@ header figure {
     margin-left: 20px;
 }
 header img {
-    width: 6em;
+    width: 7em;
 }
 header > a {
     margin-right: 20px;
@@ -220,16 +225,15 @@ header p:last-child i {
 }
 #popular article {
     background-color: #fff;
-    margin-bottom: 15px;
     border-radius: 20px;
     box-shadow: 1px 1px 8px #c2c2c2;
-    height: 150px;
+    height: 130px;
 }
 #popular article h3 {
     margin-top: 15px;
     margin-bottom: 10px;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 0.9em;
 }
 #popular article a {
     display: flex;
@@ -247,6 +251,9 @@ header p:last-child i {
     color: #d9d9d9;
     font-size: 12px;
     margin-top: auto;
+}
+#popular article p {
+    font-size: 0.9em;
 }
 #popular article figure {
     padding: 5px;
@@ -272,7 +279,12 @@ header p:last-child i {
     margin-bottom: 20px;
     border-radius: 20px;
     box-shadow: 1px 1px 8px #c2c2c2;
-    height: 240px;
+    height: 180px;
+}
+#hebergements > a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
 }
 #hebergements h2 {
     font-weight: bold;
@@ -281,23 +293,18 @@ header p:last-child i {
 }
 #hebergements article h3 {
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1em;
     flex-basis: 33.33%;
 }
 #hebergements article p {
     flex-basis: 33.33%;
+    font-size: 0.9em;
 }
 #hebergements article div {
     margin: 0 15px;
     display: flex;
     flex-direction: column;
     line-height: 24px;
-}
-#hebergements a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    font-size: 1.1em;
 }
 #hebergements article a {
     font-size: 1em;
@@ -306,6 +313,7 @@ header p:last-child i {
     display: flex;
     flex-direction: column;
     height: 100%;
+    color: #000;
 }
 #hebergements article ul {
     display: flex;
@@ -430,28 +438,6 @@ footer ul li {
 }
 
 @media screen AND (min-width:768px) {
-    header figure img {
-        width: 8em;
-    }
-    header > a {
-        font-size: 20px;
-    }
-    header nav ul li a {
-        font-size: 20px;
-        line-height: 48px;
-    }
-    #searchForm h1 {
-        font-size: 1.8em;
-    }
-    #filters h2, #popular h2, #hebergements h2, #activites h2 {
-        font-size: 1.5em;
-    }
-    #popular article h3, #hebergements article h3 {
-        font-size: 1.25em;
-    } 
-    #popular p, #filters p, #hebergements p, #activites p, header p {
-        font-size: 1.1em;
-    }
 
     footer > div {
         display: flex;
@@ -518,6 +504,7 @@ footer ul li {
     }
     header > a {
         order: 3;
+        line-height: 56px;
     }
     #filters, #searchForm {
         order: 4;
@@ -534,11 +521,11 @@ footer ul li {
         border-bottom: none;
     }
     header nav ul li a {
-        line-height: 20px;
+        line-height: 8px;
     }
 
     #searchForm form {
-        min-width: 60%;
+        min-width: 70%;
     }
     #searchForm form button {
         border-top-left-radius: 0;
@@ -579,13 +566,6 @@ footer ul li {
         display: flex;
         flex-direction: column;
     }
-    #popular article h3 {
-        height: auto;
-        font-size: 1.1em;
-    }
-    #popular article p {
-        font-size: 1em;
-    }
 
     #filters {
         display: flex;
@@ -607,12 +587,6 @@ footer ul li {
     }
     #hebergements article {
         flex: 1 0 30%;
-    }
-    #hebergements article h3 {
-        font-size: 1.1em;
-    }
-    #hebergements article p {
-        font-size: 1em;
     }
 
     #activites div article {
