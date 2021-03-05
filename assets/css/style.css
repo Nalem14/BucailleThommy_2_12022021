@@ -9,6 +9,10 @@ section, footer {
     padding: 40px 20px;
 }
 
+section article span {
+    font-weight: bold;
+}
+
 /* HEADER */
 header {
     margin-top: 20px;
