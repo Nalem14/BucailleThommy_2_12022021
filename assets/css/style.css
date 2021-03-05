@@ -498,7 +498,7 @@ footer ul li {
 }
 
 @media screen AND (min-width:1200px) {
-    header, footer {
+    header {
         margin: 30px;
     }
     
@@ -607,5 +607,6 @@ footer ul li {
 
     footer {
         margin-top: 50px;
+        padding-left: 40px;
     }
 }
