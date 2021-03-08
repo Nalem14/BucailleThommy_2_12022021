@@ -591,13 +591,14 @@ footer ul li {
 
     #activites div article {
         margin: 0 30px 30px 0;
-        height: 500px;
+        height: 400px;
     }
     #activites > div:last-child article {
         margin-right: 0;
     }
     #activites div:nth-child(2n+1) article {
-        max-height: 230px;
+        height: 200px;
+        flex: none;
     }
 
     footer > div {
