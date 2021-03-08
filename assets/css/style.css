@@ -33,7 +33,7 @@ header img {
 }
 header > a {
     margin-right: 20px;
-    line-height: 3em;
+    line-height: 4em;
     text-decoration: none;
     font-weight: bold;
     color: #106ffc;
@@ -73,6 +73,7 @@ header nav ul li:hover a {
     display: flex;
     flex-direction: column;
     padding-bottom: 0;
+    max-width: 88%;
 }
 #searchForm h1 {
     font-size: 1.4em;
