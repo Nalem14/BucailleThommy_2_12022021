@@ -254,7 +254,7 @@ header p:last-child i {
     margin-top: auto;
 }
 #popular article p {
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 #popular article figure {
     padding: 5px;
@@ -294,12 +294,12 @@ header p:last-child i {
 }
 #hebergements article h3 {
     font-weight: bold;
-    font-size: 1em;
+    font-size: 0.9em;
     flex-basis: 33.33%;
 }
 #hebergements article p {
     flex-basis: 33.33%;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 #hebergements article div {
     margin: 0 15px;
@@ -451,15 +451,18 @@ footer ul li {
 
 @media screen AND (min-width:992px) {
     #searchForm form {
-        max-width: 50%;
+        max-width: 60%;
     }
     #popular article {
         flex: 1 0 30%;
+        height: 150px;
+        margin-bottom: 20px;
     }
 
     #hebergements article {
         flex: 1 0 30%;
-        height: 240px;
+        height: 220px;
+        margin-bottom: 20px;
     }
 
     #activites {
@@ -473,14 +476,15 @@ footer ul li {
         flex-wrap: nowrap;
         flex: 1 0 24.99%;
     }
+    #activites div article figure figcaption {
+        font-size: 0.6em;
+        height: 20px;
+    }
     #activites div article {
         height: 350px;
     }
     #activites div:nth-child(2n+1) article {
         height: 125px;
-    }
-    #activites figure div {
-        height: 60%;
     }
     #activites div article:nth-child(odd) {
         flex: 1 0 50%;
@@ -556,22 +560,26 @@ footer ul li {
         flex-direction: row-reverse;
     }
     main div section:first {
-        flex: 0 0 33.32%;
+        flex: 0 0 40%;
     }
     main div section:last-child {
-        flex: 0 0 66.64%;
+        flex: 0 0 60%;
     }
 
     #popular {
         border-radius: 20px;
-        margin: 20px;
+        margin: 15px;
     }
     #popular article {
-        flex: 0 0 95%;
+        flex: 0 0 92%;
+        margin: 10px 10px;
     }
     #popular article div {
         display: flex;
         flex-direction: column;
+    }
+    #popular article figure {
+        flex-basis: 45%;
     }
 
     #filters {
@@ -590,12 +598,15 @@ footer ul li {
     #hebergements {
         background-color: #f2f2f2;
         border-radius: 20px;
-        margin: 20px;
+        margin: 15px;
     }
     #hebergements article {
         flex: 1 0 30%;
     }
 
+    #activites div article figure figcaption {
+        height: 10px;
+    }
     #activites div article {
         margin: 0 30px 30px 0;
         height: 400px;
