@@ -230,7 +230,7 @@ header p:last-child i {
     margin-top: 15px;
     margin-bottom: 10px;
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 #popular article a {
     display: flex;
@@ -250,7 +250,7 @@ header p:last-child i {
     margin-top: auto;
 }
 #popular article p {
-    font-size: 0.8em;
+    font-size: 1em;
 }
 #popular article figure {
     padding: 5px;
@@ -290,12 +290,12 @@ header p:last-child i {
 }
 #hebergements article h3 {
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 1em;
     flex-basis: 33.33%;
 }
 #hebergements article p {
     flex-basis: 33.33%;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 #hebergements article div {
     margin: 0 15px;
@@ -473,7 +473,7 @@ footer ul li {
         flex: 1 0 24.99%;
     }
     #activites div article figure figcaption {
-        font-size: 0.6em;
+        font-size: 1em;
         height: 20px;
     }
     #activites div article {
@@ -526,6 +526,7 @@ footer ul li {
         flex-basis: 15%;
         display: flex;
         justify-content: center;
+        border-top: 1px solid transparent;
     }
     header nav ul li:hover, header nav ul li:active {
         border-bottom: none;
