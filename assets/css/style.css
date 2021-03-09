@@ -444,7 +444,7 @@ footer ul li {
         flex-wrap: wrap;
     }
     footer div div {
-        flex-basis: 33.33%;
+        flex-basis: 30%;
     }
 }
 
@@ -490,7 +490,7 @@ footer ul li {
 }
 
 @media screen AND (min-width:1200px) {
-    header, main, footer div {
+    header, main, footer > div {
         max-width: 1200px;
         margin: 0 auto!important;
     }
@@ -616,7 +616,7 @@ footer ul li {
         flex: none;
     }
 
-    footer > div {
-        margin-left: 20px;
+    footer > div > div {
+        margin-left: 25px;
     }
 }
