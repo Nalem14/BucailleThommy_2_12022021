@@ -167,6 +167,7 @@ header nav ul li:hover a {
 }
 #filters ul li:hover {
     background-color: #deebff;
+    border: 2px solid #deebff;
 }
 #filters ul li:active {
     background-color: #0065fc;
