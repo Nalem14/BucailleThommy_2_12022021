@@ -479,14 +479,28 @@ footer ul li {
     #activites div article {
         height: 350px;
     }
-    #activites div:nth-child(2n+1) article {
-        height: 125px;
-    }
     #activites div article:nth-child(odd) {
         flex: 1 0 50%;
     }
     #activites div article:nth-child(even) {
         flex: 1 0 45%;
+    }
+    #activites div:nth-child(2n+1) article {
+        height: 240px;
+        flex: none;
+    }
+    #activites div:nth-child(2n+1) article:nth-child(even) {
+        height: 140px;
+    }
+    #activites > div:last-child article:nth-child(even) {
+        height: 200px;
+    }
+    #activites > div:last-child article:first-child {
+        height: 180px;
+    }
+
+    footer > div > div {
+        margin-left: 10px;
     }
 }
 
@@ -611,10 +625,6 @@ footer ul li {
     }
     #activites > div:last-child article {
         margin-right: 0;
-    }
-    #activites div:nth-child(2n+1) article {
-        height: 200px;
-        flex: none;
     }
 
     footer > div > div {
