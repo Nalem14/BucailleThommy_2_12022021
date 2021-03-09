@@ -6,7 +6,11 @@ html,body {
 }
 
 section, footer {
-    padding: 40px 20px;
+    padding: 20px 20px;
+}
+
+section article span {
+    font-weight: bold;
 }
 
 /* HEADER */
@@ -21,11 +25,11 @@ header figure {
     margin-left: 20px;
 }
 header img {
-    width: 6em;
+    width: 7em;
 }
 header > a {
     margin-right: 20px;
-    line-height: 3em;
+    line-height: 4em;
     text-decoration: none;
     font-weight: bold;
     color: #106ffc;
@@ -65,6 +69,7 @@ header nav ul li:hover a {
     display: flex;
     flex-direction: column;
     padding-bottom: 0;
+    max-width: 88%;
 }
 #searchForm h1 {
     font-size: 1.4em;
@@ -72,7 +77,7 @@ header nav ul li:hover a {
     margin-bottom: 20px;
 }
 #searchForm form {
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -99,7 +104,7 @@ header nav ul li:hover a {
 }
 #searchForm form label, #searchForm form input, #searchForm form button {
     height:100%;
-    min-width: 50px;
+    min-width: 54px;
     border: none;
 }
 #searchForm form label {
@@ -113,7 +118,7 @@ header nav ul li:hover a {
     justify-content: center;
 }
 #searchForm form i {
-    min-width: 50px;
+    min-width: 54px;
 }
 #searchForm form button span {
     display: none;
@@ -124,7 +129,7 @@ header nav ul li:hover a {
     background-color: #0065fc;
     color: #FFF;
     border-radius: 15px;
-    height: 50px;
+    height: 54px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -162,6 +167,7 @@ header nav ul li:hover a {
 }
 #filters ul li:hover {
     background-color: #deebff;
+    border: 2px solid #deebff;
 }
 #filters ul li:active {
     background-color: #0065fc;
@@ -173,12 +179,14 @@ header nav ul li:hover a {
     color: #0065fc;
     background-color: #deebff;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 54px;
+    height: 54px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 10px;
+    margin-top: -2px;
+    margin-left: -3px;
 }
 
 /* Header text info */
@@ -214,16 +222,16 @@ header p:last-child i {
 }
 #popular article {
     background-color: #fff;
-    margin-bottom: 15px;
     border-radius: 20px;
     box-shadow: 1px 1px 8px #c2c2c2;
-    height: 150px;
+    height: 130px;
+    margin-bottom: 10px;
 }
 #popular article h3 {
     margin-top: 15px;
     margin-bottom: 10px;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 #popular article a {
     display: flex;
@@ -241,6 +249,9 @@ header p:last-child i {
     color: #d9d9d9;
     font-size: 12px;
     margin-top: auto;
+}
+#popular article p {
+    font-size: 1em;
 }
 #popular article figure {
     padding: 5px;
@@ -266,7 +277,12 @@ header p:last-child i {
     margin-bottom: 20px;
     border-radius: 20px;
     box-shadow: 1px 1px 8px #c2c2c2;
-    height: 240px;
+    height: 200px;
+}
+#hebergements > a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
 }
 #hebergements h2 {
     font-weight: bold;
@@ -275,23 +291,18 @@ header p:last-child i {
 }
 #hebergements article h3 {
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1em;
     flex-basis: 33.33%;
 }
 #hebergements article p {
     flex-basis: 33.33%;
+    font-size: 1em;
 }
 #hebergements article div {
     margin: 0 15px;
     display: flex;
     flex-direction: column;
     line-height: 24px;
-}
-#hebergements a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    font-size: 1.1em;
 }
 #hebergements article a {
     font-size: 1em;
@@ -300,6 +311,7 @@ header p:last-child i {
     display: flex;
     flex-direction: column;
     height: 100%;
+    color: #000;
 }
 #hebergements article ul {
     display: flex;
@@ -359,9 +371,12 @@ header p:last-child i {
     height: 100%;
 }
 #activites figure figcaption {
-    padding: 15px 20px;
-    font-size: .8em;
+    font-size: 16px;
+    height: 50px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
 }
 
 /* Footer */
@@ -376,7 +391,7 @@ footer h3 {
     font-weight: bold;
     font-size: 1.1em;
     line-height: 32px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 5px;
 }
 footer ul li {
@@ -394,7 +409,7 @@ footer ul li {
     #popular, #hebergements  {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
     }
     #popular h2, #hebergements h2, #activites h2 {
         flex: 1 0 100%;
@@ -424,47 +439,30 @@ footer ul li {
 }
 
 @media screen AND (min-width:768px) {
-    header figure img {
-        width: 8em;
-    }
-    header > a {
-        font-size: 20px;
-    }
-    header nav ul li a {
-        font-size: 20px;
-        line-height: 48px;
-    }
-    #searchForm h1 {
-        font-size: 1.8em;
-    }
-    #filters h2, #popular h2, #hebergements h2, #activites h2 {
-        font-size: 1.5em;
-    }
-    #popular article h3, #hebergements article h3 {
-        font-size: 1.25em;
-    } 
-    #popular p, #filters p, #hebergements p, #activites p, header p {
-        font-size: 1.1em;
-    }
 
     footer > div {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+    }
+    footer div div {
+        flex-basis: 30%;
     }
 }
 
 @media screen AND (min-width:992px) {
     #searchForm form {
-        max-width: 50%;
+        max-width: 60%;
     }
     #popular article {
         flex: 1 0 30%;
+        height: 150px;
+        margin-bottom: 20px;
     }
 
     #hebergements article {
         flex: 1 0 30%;
-        height: 240px;
+        height: 220px;
+        margin-bottom: 20px;
     }
 
     #activites {
@@ -481,16 +479,158 @@ footer ul li {
     #activites div article {
         height: 350px;
     }
-    #activites div:nth-child(2n+1) article {
-        height: 125px;
-    }
-    #activites figure div {
-        height: 60%;
-    }
     #activites div article:nth-child(odd) {
         flex: 1 0 50%;
     }
     #activites div article:nth-child(even) {
         flex: 1 0 45%;
+    }
+    #activites div:nth-child(2n+1) article {
+        height: 240px;
+        flex: none;
+    }
+    #activites div:nth-child(2n+1) article:nth-child(even) {
+        height: 140px;
+    }
+    #activites > div:last-child article:nth-child(even) {
+        height: 200px;
+    }
+    #activites > div:last-child article:first-child {
+        height: 180px;
+    }
+    #activites figure div {
+        height: 60%;
+    }
+
+    footer > div > div {
+        margin-left: 10px;
+    }
+}
+
+@media screen AND (min-width:1200px) {
+    header, main, footer > div {
+        max-width: 1200px;
+        margin: 0 auto!important;
+    }
+    
+    header {
+        margin: 0 30px;
+        margin-bottom: 0;
+    }
+    
+    header figure {
+        margin-top: 30px;
+        order: 1;
+    }
+    header nav {
+        margin-top: 0;
+        order: 2;
+        flex-basis: 80%;
+    }
+    header > a {
+        order: 3;
+        line-height: 112px;
+    }
+    #filters, #searchForm {
+        order: 4;
+    }
+
+    header nav ul {
+        justify-content: flex-end;
+    }
+    header nav ul li {
+        border-bottom: none;
+        flex-basis: 15%;
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid transparent;
+    }
+    header nav ul li:hover, header nav ul li:active {
+        border-bottom: none;
+        border-top: 1px solid #0065fc;
+    }
+    header nav ul li a {
+        display: flex;
+        margin-top: 32px;
+    }
+
+    #searchForm form {
+        min-width: 80%;
+    }
+    #searchForm form button {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        font-weight: bold;
+    }
+    #searchForm form button span {
+        display: initial;
+        padding: 5px 50px;
+    }
+    #searchForm form button i {
+        display: none;
+    }
+    
+    main {
+        margin: 30px;
+        margin-top: 0;
+    }
+    main div {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    main div section:first {
+        flex: 0 0 40%;
+    }
+    main div section:last-child {
+        flex: 0 0 60%;
+    }
+
+    #popular {
+        border-radius: 20px;
+        margin: 15px;
+    }
+    #popular article {
+        flex: 0 0 92%;
+        margin: 10px 10px;
+    }
+    #popular article div {
+        display: flex;
+        flex-direction: column;
+    }
+    #popular article figure {
+        flex-basis: 45%;
+    }
+
+    #filters {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    #filters h2 {
+        margin-right: 30px;
+    }
+    #filters p {
+        flex-basis: 100%;
+    }
+
+    #hebergements {
+        background-color: #f2f2f2;
+        border-radius: 20px;
+        margin: 15px;
+    }
+    #hebergements article {
+        flex: 1 0 30%;
+    }
+    #activites div article {
+        margin: 0 30px 30px 0;
+        height: 400px;
+    }
+    #activites > div:last-child article {
+        margin-right: 0;
+    }
+
+    footer > div > div {
+        margin-left: 25px;
     }
 }
