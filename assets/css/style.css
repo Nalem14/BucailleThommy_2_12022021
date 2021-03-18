@@ -1,0 +1,636 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+html,body {
+    background-color: #FFF;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+section, footer {
+    padding: 20px 20px;
+}
+
+section article span {
+    font-weight: bold;
+}
+
+/* HEADER */
+header {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+header figure {
+    margin-left: 20px;
+}
+header img {
+    width: 7em;
+}
+header > a {
+    margin-right: 20px;
+    line-height: 4em;
+    text-decoration: none;
+    font-weight: bold;
+    color: #106ffc;
+}
+
+/* NAV */
+header nav {
+    margin-top: 20px;
+    flex-basis: 100%;
+}
+header nav ul {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
+header nav ul li {
+    flex-basis: 50%;
+    text-align: center;
+    list-style: none;
+    border-bottom: 3px solid #f2f2f2;
+}
+header nav ul li a {
+    line-height: 3em;
+    font-weight: normal;
+    color: #000;
+    text-decoration: none;
+}
+header nav ul li:hover, header nav ul li:active {
+    border-bottom: 3px solid #0065fc;
+}
+header nav ul li:hover a {
+    color: #106ffc;
+}
+
+/* FORM */
+#searchForm {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+    max-width: 88%;
+}
+#searchForm h1 {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#searchForm form {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 50px;
+    text-align: center;
+    border: 2px solid #f2f2f2;
+    border-right: none;
+    border-radius: 15px;
+    background-color: #fff;
+}
+#searchForm form input {
+    text-indent: 10px;
+    font-size: 1.2em;
+    flex-grow: 1;
+    flex-basis: 80%;
+}
+#searchForm form input:focus {
+    outline: none;
+}
+#searchForm form input::placeholder {
+    color: #000;
+    opacity: 1;
+    font-weight: bold;
+}
+#searchForm form label, #searchForm form input, #searchForm form button {
+    height:100%;
+    min-width: 54px;
+    border: none;
+}
+#searchForm form label {
+    font-size: 1.1em;
+    text-align: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#searchForm form i {
+    min-width: 54px;
+}
+#searchForm form button span {
+    display: none;
+    font-size: 1em;
+}
+#searchForm form button {
+    font-size: 1.1em;
+    background-color: #0065fc;
+    color: #FFF;
+    border-radius: 15px;
+    height: 54px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+/* Filters */
+#filters h2 {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+#filters ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+#filters ul li {
+    list-style: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    border: 2px solid #d9d9d9;
+    border-left: none;
+    border-radius: 50px;
+}
+#filters ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+#filters ul li:hover {
+    background-color: #deebff;
+    border: 2px solid #deebff;
+}
+#filters ul li:active {
+    background-color: #0065fc;
+}
+#filters ul li a:active {
+    color: #FFF;
+}
+#filters ul li a i {
+    color: #0065fc;
+    background-color: #deebff;
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-top: -2px;
+    margin-left: -3px;
+}
+
+/* Header text info */
+header p:last-child {
+    margin: 20px 0;
+    display: flex;
+    line-height: 28px;
+}
+header p:last-child i {
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+    color: #106ffc;
+    font-size: 12px;
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+/* Popular */
+#popular {
+    background-color: #f2f2f2;
+}
+#popular h2 {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#popular article {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px #c2c2c2;
+    height: 130px;
+    margin-bottom: 10px;
+}
+#popular article h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1em;
+}
+#popular article a {
+    display: flex;
+    height: 100%;
+    color: #000;
+    text-decoration: none;
+}
+#popular article ul {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: 15px;
+}
+#popular article ul li {
+    list-style: none;
+    color: #d9d9d9;
+    font-size: 12px;
+    margin-top: auto;
+}
+#popular article p {
+    font-size: 1em;
+}
+#popular article figure {
+    padding: 5px;
+    border-radius: 15px 0 0 15px;
+    flex-basis: 40%;
+}
+#popular article figure img {
+    height: 100%; 
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+#popular div {
+    flex-basis: 60%;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Acomodity */
+#hebergements article {
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px #c2c2c2;
+    height: 200px;
+}
+#hebergements > a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+#hebergements h2 {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+#hebergements article h3 {
+    font-weight: bold;
+    font-size: 1em;
+    flex-basis: 33.33%;
+}
+#hebergements article p {
+    flex-basis: 33.33%;
+    font-size: 1em;
+}
+#hebergements article div {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
+}
+#hebergements article a {
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: #000;
+}
+#hebergements article ul {
+    display: flex;
+    margin-bottom: 15px;
+    margin-top: auto;
+}
+#hebergements article ul li {
+    list-style: none;
+    color: #d9d9d9;
+    font-size: 12px;
+    margin-top: auto;
+}
+#hebergements figure {
+    margin: 5px;
+    height: 60%;
+}
+#hebergements figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Activities */
+#activites article {
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px #c2c2c2;
+    height: 240px;
+}
+#activites h2 {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+#activites a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 100%;
+}
+#activites figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+#activites figure div {
+    height: 80%;
+}
+#activites figure img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    height: 100%;
+}
+#activites figure figcaption {
+    font-size: 16px;
+    height: 50px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #f2f2f2;
+}
+footer a {
+    color: #000;
+    text-decoration: none;
+}
+footer h3 {
+    font-weight: bold;
+    font-size: 1.1em;
+    line-height: 32px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+footer ul li {
+    list-style: none;
+    line-height: 28px;
+}
+
+
+/* Divers */
+.active {
+    color: #0065fc;
+}
+
+@media screen AND (min-width:576px) {
+    #popular, #hebergements  {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #popular h2, #hebergements h2, #activites h2 {
+        flex: 1 0 100%;
+    }
+    #popular article, #hebergements article {
+        flex: 1 0 45%;
+        margin: 5px 10px;
+    }
+    #hebergements > a {
+        margin-top: 20px;
+    }
+    #activites div {
+        display: flex;
+        justify-content: space-between;
+    }
+    #activites div article {
+        flex: 1 0 45%;
+        align-items: center;
+        margin: 5px;
+    }
+    #activites div article:nth-child(odd) {
+        flex: 1 0 60%;
+    }
+    #activites div article:nth-child(even) {
+        flex: 1 0 30%;
+    }
+}
+
+@media screen AND (min-width:768px) {
+
+    footer > div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer div div {
+        flex-basis: 30%;
+    }
+}
+
+@media screen AND (min-width:992px) {
+    #searchForm form {
+        max-width: 60%;
+    }
+    #popular article {
+        flex: 1 0 30%;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+
+    #hebergements article {
+        flex: 1 0 30%;
+        height: 220px;
+        margin-bottom: 20px;
+    }
+
+    #activites {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #activites div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        flex: 1 0 24.99%;
+    }
+    #activites div article {
+        height: 350px;
+    }
+    #activites div article:nth-child(odd) {
+        flex: 1 0 50%;
+    }
+    #activites div article:nth-child(even) {
+        flex: 1 0 45%;
+    }
+    #activites div:nth-child(2n+1) article {
+        height: 240px;
+        flex: none;
+    }
+    #activites div:nth-child(2n+1) article:nth-child(even) {
+        height: 140px;
+    }
+    #activites > div:last-child article:nth-child(even) {
+        height: 200px;
+    }
+    #activites > div:last-child article:first-child {
+        height: 180px;
+    }
+    #activites figure div {
+        height: 60%;
+    }
+
+    footer > div > div {
+        margin-left: 10px;
+    }
+}
+
+@media screen AND (min-width:1200px) {
+    header, main, footer > div {
+        max-width: 1200px;
+        margin: 0 auto!important;
+    }
+    
+    header {
+        margin: 0 30px;
+        margin-bottom: 0;
+    }
+    
+    header figure {
+        margin-top: 30px;
+        order: 1;
+    }
+    header nav {
+        margin-top: 0;
+        order: 2;
+        flex-basis: 80%;
+    }
+    header > a {
+        order: 3;
+        line-height: 112px;
+    }
+    #filters, #searchForm {
+        order: 4;
+    }
+
+    header nav ul {
+        justify-content: flex-end;
+    }
+    header nav ul li {
+        border-bottom: none;
+        flex-basis: 15%;
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid transparent;
+    }
+    header nav ul li:hover, header nav ul li:active {
+        border-bottom: none;
+        border-top: 1px solid #0065fc;
+    }
+    header nav ul li a {
+        display: flex;
+        margin-top: 32px;
+    }
+
+    #searchForm form {
+        min-width: 80%;
+    }
+    #searchForm form button {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        font-weight: bold;
+    }
+    #searchForm form button span {
+        display: initial;
+        padding: 5px 50px;
+    }
+    #searchForm form button i {
+        display: none;
+    }
+    
+    main {
+        margin: 30px;
+        margin-top: 0;
+    }
+    main div {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    main div section:first {
+        flex: 0 0 40%;
+    }
+    main div section:last-child {
+        flex: 0 0 60%;
+    }
+
+    #popular {
+        border-radius: 20px;
+        margin: 15px;
+    }
+    #popular article {
+        flex: 0 0 92%;
+        margin: 10px 10px;
+    }
+    #popular article div {
+        display: flex;
+        flex-direction: column;
+    }
+    #popular article figure {
+        flex-basis: 45%;
+    }
+
+    #filters {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    #filters h2 {
+        margin-right: 30px;
+    }
+    #filters p {
+        flex-basis: 100%;
+    }
+
+    #hebergements {
+        background-color: #f2f2f2;
+        border-radius: 20px;
+        margin: 15px;
+    }
+    #hebergements article {
+        flex: 1 0 30%;
+    }
+    #activites div article {
+        margin: 0 30px 30px 0;
+        height: 400px;
+    }
+    #activites > div:last-child article {
+        margin-right: 0;
+    }
+
+    footer > div > div {
+        margin-left: 25px;
+    }
+}
